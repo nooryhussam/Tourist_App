@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// font colors app
 class AppColors {
   static const blue = Color(0xFF0D6EFD);
   static const lightBlue = Color(0xFF3174F0);
@@ -10,41 +9,14 @@ class AppColors {
   static const grey = Color(0xff7D848D);
 }
 
-// // font styles + common widgets
-class AppTextStyles {
-  static TextStyle title({
-    required double fontSize,
-    Color color = AppColors.blue,
-  }) {
-    return GoogleFonts.sourceSans3(
-      fontWeight: FontWeight.bold,
-      fontSize: fontSize,
-      color: color,
-    );
-  }
-
-  static TextStyle body({
-    required double fontSize,
-    Color color = AppColors.blue,
-  }) {
-    return GoogleFonts.sourceSans3(fontSize: fontSize, color: color);
-  }
-
-  static TextStyle button({
-    required double fontSize,
-    Color color = AppColors.white,
-  }) {
-    return GoogleFonts.sourceSans3(fontSize: fontSize, color: color);
-  }
-}
-
 class CustomButton extends StatelessWidget {
   final String text;
   final Size size;
   final double textSize;
   final double borderRadius;
   final VoidCallback? onPressed;
-   CustomButton({
+  const CustomButton({
+    super.key,
     required this.size,
     required this.borderRadius,
     required this.onPressed,
@@ -79,13 +51,12 @@ class AppStyles {
   }) {
     return InputDecoration(
       filled: true,
-      fillColor: Color(0xffF7F7F9),
+      fillColor: const Color(0xffF7F7F9),
       hintText: hintText,
       hintStyle: const TextStyle(
         color: Color.fromARGB(255, 180, 180, 180),
         fontSize: 14,
       ),
-
       enabledBorder: const OutlineInputBorder(
         borderSide: BorderSide(color: Color(0xFFF7F7F9)),
       ),
@@ -116,7 +87,7 @@ class SocialCircle extends StatelessWidget {
   const SocialCircle({
     super.key,
     required this.child,
-    this.radius = 15,
+    this.radius = 25,
     this.borderColor = const Color(0xff3D4DA6),
     this.backgroundColor = Colors.white,
   });

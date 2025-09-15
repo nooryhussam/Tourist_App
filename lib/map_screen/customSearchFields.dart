@@ -46,7 +46,7 @@ class CustomSearchField extends StatelessWidget {
           ),
         ),
         if (suggestions.isNotEmpty)
-          Container(
+          SizedBox(
             height: 150,
             child: ListView.builder(
               itemCount: suggestions.length,

@@ -8,7 +8,7 @@ class HelpSupportPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final titleController = TextEditingController();
     final problemController = TextEditingController();
-    final _formKey = GlobalKey<FormState>();
+    final formKey = GlobalKey<FormState>();
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -16,7 +16,7 @@ class HelpSupportPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Form(
-          key: _formKey,
+          key: formKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -83,7 +83,7 @@ class HelpSupportPage extends StatelessWidget {
                 height: 35,
                 child: ElevatedButton(
                   onPressed: () {
-                    if (_formKey.currentState!.validate()) {}
+                    if (formKey.currentState!.validate()) {}
                   },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(

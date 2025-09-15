@@ -205,7 +205,7 @@ class AuthService {
       }
     } catch (e) {
       print('Error updating user data: $e');
-      throw e;
+      rethrow;
     }
   }
 

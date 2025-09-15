@@ -34,14 +34,14 @@ class CustomDrawer extends StatelessWidget {
                       height: 10,
                     ),
                     //data must come from firebase
-                    Text(
+                    const Text(
                       "Ahmed Ezz",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
                           fontSize: 18),
                     ),
-                    Text(
+                    const Text(
                       "Damietta",
                       style: TextStyle(
                           color: Colors.white,
