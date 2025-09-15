@@ -37,7 +37,7 @@ class _GovernmentSelectionScreenState extends State<GovernmentSelectionScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 const SizedBox(height: 20),
-                SizedBox(height: 20),
+             const    SizedBox(height: 20),
                 Image.asset(
                   'assets/images/image 28.png',
                   height: 30,
@@ -101,7 +101,7 @@ class _GovernmentSelectionScreenState extends State<GovernmentSelectionScreen> {
               },
             ),
             const SizedBox(height: 25),
-            SizedBox(height: 25),
+          const  SizedBox(height: 15),
             CustomButton(
               text: "Sign In",
               size: const Size(327, 48),
@@ -115,8 +115,7 @@ class _GovernmentSelectionScreenState extends State<GovernmentSelectionScreen> {
               borderRadius: 10,
             ),
 
-            const SizedBox(height: 15),
-           SizedBox(height: 15),
+          const SizedBox(height: 10),
             CustomButton(
               text: "Sign Up",
               size: const Size(327, 48),
