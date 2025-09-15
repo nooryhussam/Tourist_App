@@ -74,15 +74,15 @@ class AppStyles {
   static InputDecoration inputDecoration({
     Widget? suffixIcon,
     String? hintText,
-
+    Widget? hint,
     Widget? prefixIcon,
   }) {
     return InputDecoration(
       filled: true,
-      fillColor:const Color(0xffF7F7F9),
+      fillColor: Color(0xffF7F7F9),
       hintText: hintText,
-      hintStyle: GoogleFonts.inter(
-        color: const Color.fromARGB(255, 180, 180, 180),
+      hintStyle: const TextStyle(
+        color: Color.fromARGB(255, 180, 180, 180),
         fontSize: 14,
       ),
 
@@ -102,6 +102,7 @@ class AppStyles {
         borderSide: const BorderSide(color: Colors.red, width: 2),
       ),
       suffixIcon: suffixIcon,
+      prefixIcon: prefixIcon,
     );
   }
 }
